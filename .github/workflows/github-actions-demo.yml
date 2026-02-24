@@ -26,6 +26,7 @@ jobs:
 
       - name: List files in the repository
         run: |
+          echo "Branch name ${{ github.ref }}"
           echo "The repository ${{ github.repository }} contains the following files:"
           tree
 
